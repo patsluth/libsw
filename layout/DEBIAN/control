@@ -1,0 +1,8 @@
+Package: com.patsluth.libsw
+Name: libsw
+Depends: jp.ashikase.libpackageinfo
+Architecture: iphoneos-arm
+Description: Shared library for my tweaks
+Maintainer: Pat Sluth
+Author: Pat Sluth
+Section: Development

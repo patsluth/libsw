@@ -1,0 +1,98 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		2E900EDA1C447C6400A38541 /* layout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = layout; path = libsw/layout; sourceTree = "<group>"; };
+		2E900EDB1C447C6400A38541 /* libsw */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libsw; path = libsw/libsw; sourceTree = "<group>"; };
+		2E900EDC1C447C6400A38541 /* libsw.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = libsw.mm; path = libsw/libsw.mm; sourceTree = "<group>"; };
+		2E900EDD1C447C6400A38541 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = Makefile; path = libsw/Makefile; sourceTree = "<group>"; };
+		2E900EDE1C447C6400A38541 /* SWAppLauncher.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWAppLauncher.xm; path = libsw/SWAppLauncher.xm; sourceTree = "<group>"; };
+		2E900EDF1C447C6400A38541 /* SWPSListController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWPSListController.mm; path = libsw/SWPSListController.mm; sourceTree = "<group>"; };
+		2E900EE01C447C6400A38541 /* SWPSListControllerHeaderView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWPSListControllerHeaderView.mm; path = libsw/SWPSListControllerHeaderView.mm; sourceTree = "<group>"; };
+		2E900EE11C447C6400A38541 /* SWPSTwitterCell.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWPSTwitterCell.m; path = libsw/SWPSTwitterCell.m; sourceTree = "<group>"; };
+		2E900EE21C447C6400A38541 /* SWSuperiorWindow.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWSuperiorWindow.m; path = libsw/SWSuperiorWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2E334F3E1AE836F0002046A1 = {
+			isa = PBXGroup;
+			children = (
+				2E900EDA1C447C6400A38541 /* layout */,
+				2E900EDB1C447C6400A38541 /* libsw */,
+				2E900EDD1C447C6400A38541 /* Makefile */,
+				2E3E57311E799A32005FE4DD /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		2E3E57311E799A32005FE4DD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2E900EDC1C447C6400A38541 /* libsw.mm */,
+				2E900EDE1C447C6400A38541 /* SWAppLauncher.xm */,
+				2E900EDF1C447C6400A38541 /* SWPSListController.mm */,
+				2E900EE01C447C6400A38541 /* SWPSListControllerHeaderView.mm */,
+				2E900EE11C447C6400A38541 /* SWPSTwitterCell.m */,
+				2E900EE21C447C6400A38541 /* SWSuperiorWindow.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		2E334F3F1AE836F0002046A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+			};
+			buildConfigurationList = 2E334F421AE836F0002046A1 /* Build configuration list for PBXProject "libsw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E334F3E1AE836F0002046A1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		2E334F431AE836F0002046A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		2E334F441AE836F0002046A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E334F421AE836F0002046A1 /* Build configuration list for PBXProject "libsw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E334F431AE836F0002046A1 /* Debug */,
+				2E334F441AE836F0002046A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E334F3F1AE836F0002046A1 /* Project object */;
+}
