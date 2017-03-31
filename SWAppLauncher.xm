@@ -8,8 +8,6 @@
 
 #import "SWAppLauncher.h"
 
-#import <libSluthware/UIScrollView+SW.h>
-
 #import <Springboard/SBApplication.h>
 #import <Springboard/SBApplicationController.h>
 #import <Springboard/SBUIController.h>
@@ -36,17 +34,17 @@ static SBApplication *swAppLauncherAppToLaunchOnUnlock;
     }
 }
 
-- (void)lockScreenView:(id)arg1 didScrollToPage:(long long)arg2
-{
-    %orig();
-    
-    if ([[self lockScreenScrollView] page].x == 1) {
-        swAppLauncherAppToLaunchOnUnlock = nil;
-    }
-    
-    //0 is passcode view
-    //1 is main view. still main view even if no passcode view.
-}
+//- (void)lockScreenView:(id)arg1 didScrollToPage:(long long)arg2
+//{
+//    %orig();
+//    
+//    if ([[self lockScreenScrollView] page].x == 1) {
+//        swAppLauncherAppToLaunchOnUnlock = nil;
+//    }
+//    
+//    //0 is passcode view
+//    //1 is main view. still main view even if no passcode view.
+//}
 
 %end
 
@@ -58,11 +56,22 @@ static SBApplication *swAppLauncherAppToLaunchOnUnlock;
 
 + (void)launchAppWithBundleID:(NSString *)bundleID
 {
-    id app = [[%c(SBApplicationController) sharedInstance] applicationWithBundleIdentifier:bundleID];
+    NSLog(@"PAT %@", bundleID);
     
-    if (app) {
-        [%c(SWAppLauncher) launchApp:app];
-    }
+//    SBApplicationController *applicationController = [%c(SBApplicationController) sharedInstance];
+//    NSLog(@"PAT %@", applicationController);
+//    
+//    NSDictionary *applications = MSHookIvar<NSDictionary *>(applicationController, "_applicationsByBundleIdentifer");
+//    
+//    NSLog(@"PAT %@", applications);
+//    
+//    id app = [applications valueForKey:bundleID];
+//    
+//    NSLog(@"PAT %@", app);
+//    
+//    if (app) {
+//        [%c(SWAppLauncher) launchApp:app];
+//    }
 }
 
 + (void)launchApp:(SBApplication *)app

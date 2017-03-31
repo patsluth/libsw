@@ -94,20 +94,20 @@
         return;
     }
     
-//    NSURL *tweetbotURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", @"tweetbot:///user_profile/", specifier.properties[@"username"]]];
-//    NSURL *twitterURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", @"twitter://user?screen_name=", specifier.properties[@"username"]]];
+    NSURL *tweetbotURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", @"tweetbot:///user_profile/", specifier.properties[@"username"]]];
+    NSURL *twitterURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", @"twitter://user?screen_name=", specifier.properties[@"username"]]];
     
-//    if ([[UIApplication sharedApplication] canOpenURL:tweetbotURL]) {
-//        [[UIApplication sharedApplication] openURL:tweetbotURL];
-//        return;
-//    } else if ([[UIApplication sharedApplication] canOpenURL:twitterURL]) {
-//        [[UIApplication sharedApplication] openURL:twitterURL];
-//        return;
-//    }
-//    
-//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",
-//                                                                     @"https://twitter.com/",
-//                                                                     specifier.properties[@"username"]]]];
+    if ([[UIApplication sharedApplication] canOpenURL:tweetbotURL]) {
+        [[UIApplication sharedApplication] openURL:tweetbotURL];
+        return;
+    } else if ([[UIApplication sharedApplication] canOpenURL:twitterURL]) {
+        [[UIApplication sharedApplication] openURL:twitterURL];
+        return;
+    }
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",
+                                                                     @"https://twitter.com/",
+                                                                     specifier.properties[@"username"]]]];
 }
 
 @end

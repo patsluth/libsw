@@ -7,24 +7,23 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		2E900EDA1C447C6400A38541 /* layout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = layout; path = libsw/layout; sourceTree = "<group>"; };
-		2E900EDB1C447C6400A38541 /* libsw */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libsw; path = libsw/libsw; sourceTree = "<group>"; };
-		2E900EDC1C447C6400A38541 /* libsw.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = libsw.mm; path = libsw/libsw.mm; sourceTree = "<group>"; };
-		2E900EDD1C447C6400A38541 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = Makefile; path = libsw/Makefile; sourceTree = "<group>"; };
-		2E900EDE1C447C6400A38541 /* SWAppLauncher.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWAppLauncher.xm; path = libsw/SWAppLauncher.xm; sourceTree = "<group>"; };
-		2E900EDF1C447C6400A38541 /* SWPSListController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWPSListController.mm; path = libsw/SWPSListController.mm; sourceTree = "<group>"; };
-		2E900EE01C447C6400A38541 /* SWPSListControllerHeaderView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWPSListControllerHeaderView.mm; path = libsw/SWPSListControllerHeaderView.mm; sourceTree = "<group>"; };
-		2E900EE11C447C6400A38541 /* SWPSTwitterCell.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWPSTwitterCell.m; path = libsw/SWPSTwitterCell.m; sourceTree = "<group>"; };
-		2E900EE21C447C6400A38541 /* SWSuperiorWindow.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = SWSuperiorWindow.m; path = libsw/SWSuperiorWindow.m; sourceTree = "<group>"; };
+		2EB0E61A1E7DB1C4008999DB /* layout */ = {isa = PBXFileReference; lastKnownFileType = folder; path = layout; sourceTree = "<group>"; };
+		2EB0E61B1E7DB1C4008999DB /* libsw */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libsw; sourceTree = "<group>"; };
+		2EB0E61C1E7DB1C4008999DB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2EB0E61E1E7DB1D2008999DB /* SWAppLauncher.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = SWAppLauncher.xm; sourceTree = "<group>"; };
+		2EB0E61F1E7DB1D2008999DB /* SWPSListController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SWPSListController.mm; sourceTree = "<group>"; };
+		2EB0E6201E7DB1D2008999DB /* SWPSListControllerHeaderView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SWPSListControllerHeaderView.mm; sourceTree = "<group>"; };
+		2EB0E6211E7DB1D2008999DB /* SWPSTwitterCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWPSTwitterCell.m; sourceTree = "<group>"; };
+		2EB0E6221E7DB1D2008999DB /* SWSuperiorWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWSuperiorWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		2E334F3E1AE836F0002046A1 = {
 			isa = PBXGroup;
 			children = (
-				2E900EDA1C447C6400A38541 /* layout */,
-				2E900EDB1C447C6400A38541 /* libsw */,
-				2E900EDD1C447C6400A38541 /* Makefile */,
+				2EB0E61A1E7DB1C4008999DB /* layout */,
+				2EB0E61B1E7DB1C4008999DB /* libsw */,
+				2EB0E61C1E7DB1C4008999DB /* Makefile */,
 				2E3E57311E799A32005FE4DD /* src */,
 			);
 			sourceTree = "<group>";
@@ -32,12 +31,11 @@
 		2E3E57311E799A32005FE4DD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				2E900EDC1C447C6400A38541 /* libsw.mm */,
-				2E900EDE1C447C6400A38541 /* SWAppLauncher.xm */,
-				2E900EDF1C447C6400A38541 /* SWPSListController.mm */,
-				2E900EE01C447C6400A38541 /* SWPSListControllerHeaderView.mm */,
-				2E900EE11C447C6400A38541 /* SWPSTwitterCell.m */,
-				2E900EE21C447C6400A38541 /* SWSuperiorWindow.m */,
+				2EB0E61E1E7DB1D2008999DB /* SWAppLauncher.xm */,
+				2EB0E61F1E7DB1D2008999DB /* SWPSListController.mm */,
+				2EB0E6201E7DB1D2008999DB /* SWPSListControllerHeaderView.mm */,
+				2EB0E6211E7DB1D2008999DB /* SWPSTwitterCell.m */,
+				2EB0E6221E7DB1D2008999DB /* SWSuperiorWindow.m */,
 			);
 			name = src;
 			sourceTree = "<group>";
