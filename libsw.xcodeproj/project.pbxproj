@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		2E6CC1C31E9035AA009588ED /* libsw2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libsw2; sourceTree = "<group>"; };
 		2EB0E61A1E7DB1C4008999DB /* layout */ = {isa = PBXFileReference; lastKnownFileType = folder; path = layout; sourceTree = "<group>"; };
-		2EB0E61B1E7DB1C4008999DB /* libsw */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libsw; sourceTree = "<group>"; };
 		2EB0E61C1E7DB1C4008999DB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		2EB0E61E1E7DB1D2008999DB /* SWAppLauncher.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = SWAppLauncher.xm; sourceTree = "<group>"; };
 		2EB0E61F1E7DB1D2008999DB /* SWPSListController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SWPSListController.mm; sourceTree = "<group>"; };
@@ -22,7 +22,6 @@
 			isa = PBXGroup;
 			children = (
 				2EB0E61A1E7DB1C4008999DB /* layout */,
-				2EB0E61B1E7DB1C4008999DB /* libsw */,
 				2EB0E61C1E7DB1C4008999DB /* Makefile */,
 				2E3E57311E799A32005FE4DD /* src */,
 			);
@@ -31,6 +30,7 @@
 		2E3E57311E799A32005FE4DD /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2E6CC1C31E9035AA009588ED /* libsw2 */,
 				2EB0E61E1E7DB1D2008999DB /* SWAppLauncher.xm */,
 				2EB0E61F1E7DB1D2008999DB /* SWPSListController.mm */,
 				2EB0E6201E7DB1D2008999DB /* SWPSListControllerHeaderView.mm */,

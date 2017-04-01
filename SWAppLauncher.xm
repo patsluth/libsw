@@ -17,7 +17,10 @@
 #import <Springboard/SBLockScreenViewController.h>
 #import <Springboard/SBControlCenterController.h>
 
+#import "Sluthware/Sluthware.h"
+
 static SBApplication *swAppLauncherAppToLaunchOnUnlock;
+
 
 
 
@@ -56,22 +59,15 @@ static SBApplication *swAppLauncherAppToLaunchOnUnlock;
 
 + (void)launchAppWithBundleID:(NSString *)bundleID
 {
-    NSLog(@"PAT %@", bundleID);
+    TRY
     
-//    SBApplicationController *applicationController = [%c(SBApplicationController) sharedInstance];
-//    NSLog(@"PAT %@", applicationController);
-//    
-//    NSDictionary *applications = MSHookIvar<NSDictionary *>(applicationController, "_applicationsByBundleIdentifer");
-//    
-//    NSLog(@"PAT %@", applications);
-//    
-//    id app = [applications valueForKey:bundleID];
-//    
-//    NSLog(@"PAT %@", app);
-//    
-//    if (app) {
-//        [%c(SWAppLauncher) launchApp:app];
-//    }
+    SBApplicationController *applicationController = [%c(SBApplicationController) sharedInstance];
+    NSDictionary *applications = MSHookIvar<NSDictionary *>(applicationController, "_applicationsByBundleIdentifer");
+    id app = [applications valueForKey:bundleID];
+    [%c(SWAppLauncher) launchApp:app];
+    
+    CATCH_LOG
+    TRY_END
 }
 
 + (void)launchApp:(SBApplication *)app
@@ -79,28 +75,6 @@ static SBApplication *swAppLauncherAppToLaunchOnUnlock;
     if (!app) {
         return;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-//    unsigned int methodCount = 0;
-//    Method *methods = class_copyMethodList(%c(SBUIController), &methodCount);
-//    
-//    NSLog(@"Found %d methods on '%s'\n", methodCount, class_getName(%c(SBUIController)));
-//    
-//    for (unsigned int i = 0; i < methodCount; i++) {
-//        Method method = methods[i];
-//        NSLog(@"METHOD %s", sel_getName(method_getName(method)));
-//    }
-    
-    
-    
-    
-    
     
     id sbUIController = [%c(SBUIController) sharedInstanceIfExists];
     

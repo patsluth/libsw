@@ -3,7 +3,7 @@
 
 
 
-FINALPACKAGE = 0
+FINALPACKAGE = 1
 DEBUG = 0
 PACKAGE_VERSION = 1.1-0
 
@@ -22,37 +22,37 @@ TARGET = iphone:clang:latest:8.0
 
 
 
-LIBRARY_NAME = libsw
-libsw_CFLAGS = -fobjc-arc
-libsw_LDFLAGS += -F$(THEOS)/lib/
-libsw_FILES = \
+LIBRARY_NAME = libsw2
+libsw2_CFLAGS = -fobjc-arc
+libsw2_LDFLAGS += -F$(THEOS)/lib/
+libsw2_FILES = \
                 SWAppLauncher.xm \
                 SWPSListController.mm \
                 SWPSListControllerHeaderView.mm \
                 SWPSTwitterCell.m \
                 SWSuperiorWindow.m
-libsw_FRAMEWORKS = CoreFoundation Foundation UIKit Social
-libsw_PRIVATE_FRAMEWORKS = Preferences
-libsw_WEAK_FRAMEWORKS = Sluthware
-libsw_LIBRARIES = substrate packageinfo
+libsw2_FRAMEWORKS = CoreFoundation Foundation UIKit Social
+libsw2_PRIVATE_FRAMEWORKS = Preferences
+libsw2_WEAK_FRAMEWORKS = Sluthware
+libsw2_LIBRARIES = substrate packageinfo
 
-ADDITIONAL_CFLAGS = -Ilibsw
-
-
+ADDITIONAL_CFLAGS = -Ilibsw2
 
 
 
-include theos/makefiles/common.mk
-include theos/makefiles/library.mk
-include theos/makefiles/swcommon.mk
+
+
+include $(THEOS)/makefiles/common.mk
+include $(THEOS)/makefiles/library.mk
+include $(THEOS)/makefiles/swcommon.mk
 
 
 
 
 
 clean::
-	rm -rf $(THEOS)/include/libsw
-	rm -rf $(THEOS)/lib/libsw.dylib
+	rm -rf $(THEOS)/include/libsw2
+	rm -rf $(THEOS)/lib/libsw2.dylib
 
 
 
@@ -64,9 +64,9 @@ FRAMEWORKS_DIR = $(THEOS_STAGING_DIR)/Library/Frameworks
 stage::
 	$(ECHO_NOTHING) mkdir -p $(INCLUDE_DIR) $(ECHO_END)
 	$(ECHO_NOTHING) mkdir -p $(FRAMEWORKS_DIR) $(ECHO_END)
-	$(ECHO_NOTHING) cp -r libsw $(INCLUDE_DIR) $(ECHO_END)
-	$(ECHO_NOTHING) cp -r libsw $(THEOS)/include $(ECHO_END)
-	$(ECHO_NOTHING) cp $(THEOS_STAGING_DIR)/usr/lib/libsw.dylib $(THEOS)/lib $(ECHO_END)
+	$(ECHO_NOTHING) cp -r libsw2 $(INCLUDE_DIR) $(ECHO_END)
+	$(ECHO_NOTHING) cp -r libsw2 $(THEOS)/include $(ECHO_END)
+	$(ECHO_NOTHING) cp $(THEOS_STAGING_DIR)/usr/lib/libsw2.dylib $(THEOS)/lib $(ECHO_END)
 	$(ECHO_NOTHING)	cp -a $(THEOS)/lib/Sluthware.framework $(THEOS_STAGING_DIR)/Library/Frameworks/Sluthware.framework$(ECHO_END)
 
 
