@@ -3,15 +3,14 @@
 
 
 
-FINALPACKAGE = 1
-DEBUG = 0
-PACKAGE_VERSION = 1.1-1
+export FINALPACKAGE = 1
+PACKAGE_VERSION = 1.1-2
 
 
 
 
 
-ifeq ($(DEBUG), 1)
+ifeq ($(FINALPACKAGE), 0)
     ARCHS = arm64
 else
     ARCHS = armv7 armv7s arm64
@@ -26,7 +25,8 @@ LIBRARY_NAME = libsw2
 libsw2_CFLAGS = -fobjc-arc
 libsw2_LDFLAGS += -F$(THEOS)/lib/
 libsw2_FILES = \
-                SWAppLauncher.xm \
+                SWApplicationLauncher.xm \
+				SWControlCenterHelper.xm \
                 SWPSListController.mm \
                 SWPSListControllerHeaderView.mm \
                 SWPSTwitterCell.m \

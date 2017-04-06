@@ -1,6 +1,6 @@
 //
 //  SWPSListController.h
-//  acapellaprefs
+//  libsw
 //
 //  Created by Pat Sluth on 2015-05-02.
 //

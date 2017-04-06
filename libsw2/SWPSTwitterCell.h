@@ -1,6 +1,6 @@
 //
 //  SWPSTwitterCell.h
-//  acapellaprefs
+//  libsw
 //
 //  Created by Pat Sluth on 2015-04-25.
 //
